@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <!-- Set Number -->
+    <TextView
+        android:id="@+id/tvSetNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set 1"
+        android:textSize="19sp"
+        android:layout_weight="1" />
+
+    <!-- Reps Input -->
+    <EditText
+        android:id="@+id/etReps"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_weight="2"
+        android:hint="Reps"
+        android:inputType="number" />
+
+    <!-- Weight Input -->
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_weight="2"
+        android:hint="Weight"
+        android:inputType="numberDecimal"
+        android:layout_marginStart="8dp" />
+
+    <!-- Delete Set Button -->
+    <ImageButton
+        android:id="@+id/btnDeleteSet"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:padding="9dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Delete Set"
+        android:scaleType="centerInside"
+        android:src="@drawable/delete_icon" />
+</LinearLayout>

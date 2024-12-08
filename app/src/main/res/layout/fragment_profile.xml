@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"/>
+
+        <FrameLayout
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp">
+
+            <!-- Profile Picture -->
+
+            <ImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Profile Picture"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gym_profile_pic" />
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/addProfilePicButton"-->
+<!--                android:layout_width="48dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:layout_gravity="top|end"-->
+<!--                android:layout_margin="4dp"-->
+<!--                android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--                android:contentDescription="Add Profile Picture"-->
+<!--                android:scaleType="centerInside"-->
+<!--                android:src="@drawable/ic_add" />-->
+        </FrameLayout>
+
+        <!-- User Information -->
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textColor="@color/black"
+            android:paddingTop="30dp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/weightLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight:"
+            android:textColor="@color/black"
+            android:paddingTop="16dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/levelLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level:"
+            android:textColor="@color/black"
+            android:paddingTop="16dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/expLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exp:"
+            android:textColor="@color/black"
+            android:paddingTop="16dp"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/expProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progress="50"
+            android:progressTint="@color/purple_200"
+            android:indeterminate="false"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/strLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strength (STR):"
+            android:textColor="@color/black"
+            android:paddingTop="16dp"
+            android:textSize="20sp" />
+
+        <!-- Re-evaluation Button -->
+        <Button
+            android:id="@+id/reevaluateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:padding="10dp"
+            android:text="Re-Evaluate"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>
